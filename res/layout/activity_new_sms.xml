@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.smsservice.NewSms" 
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout 
+      android:layout_width="match_parent"
+      android:layout_height="40dp"  
+      
+      android:orientation="horizontal"   
+      android:weightSum="1"
+      android:background="#7600e5"
+       >
+       
+        
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight=".1"
+            android:layout_height="match_parent"        
+            android:src="@drawable/back"
+             android:id="@+id/backbutton"
+             android:layout_marginLeft="3dp"
+             
+            />
+        
+        <TextView
+            
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.80"
+            android:gravity="center"
+            android:text="@string/newsms"
+            android:textColor="#FFFFFF"
+            android:textSize="23dp" />
+        
+            <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".1"
+            android:layout_height="35dp"            
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"   
+            />
+        
+        
+    </LinearLayout>
+   
+    
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".13"
+        android:background="#66e6c1"
+        >
+        <EditText
+       android:layout_marginBottom="5dp"
+       android:layout_marginLeft="5dp"
+       android:layout_marginTop="5dp"
+       android:layout_marginRight="5dp"
+       android:id="@+id/mobileno"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent" 
+       android:background="#ffa77e"
+       android:hint="Type mobile no"
+       android:textColor="#000000"
+       android:textSize="20dp" />
+    
+        
+        
+    </LinearLayout>
+    
+    <ListView
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight=".75"
+       android:background="#cccccc"/>
+   
+   
+   
+      <LinearLayout 
+      android:layout_gravity="bottom"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight=".13"  
+      android:orientation="horizontal"   
+      android:weightSum="1"
+      android:background="#95959a"
+       >
+
+          <EditText
+              android:id="@+id/sms"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_marginBottom="5dp"
+              android:layout_marginLeft="5dp"
+              android:layout_marginTop="5dp"
+              android:layout_weight="0.85"
+              android:background="#ffa77e"
+              android:ems="10"
+              android:hint="Type text message"
+              android:textColor="#000000"
+              android:textSize="23dp" >
+
+              <requestFocus />
+          </EditText>
+        
+            <ImageButton
+                android:id="@+id/send"
+                android:layout_marginRight="5dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15"
+                android:src="@drawable/send" />
+                
+    </LinearLayout>
+    
+</LinearLayout>
